@@ -1,0 +1,11 @@
+{
+  "name": "derecho",
+  "version": "1.0.0",
+  "description": "Marco legal argentino accesible — laboral, consumidor, contratos, societario",
+  "skills": [
+    {
+      "name": "derecho",
+      "path": "skills/derecho/SKILL.md"
+    }
+  ]
+}
