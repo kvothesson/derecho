@@ -2,6 +2,12 @@
 description: Marco legal argentino accesible — derechos laborales, consumidor, contratos y societario. Usar cuando el usuario pregunta sobre sus derechos, cómo reclamar, qué dice la ley o cómo constituir una empresa.
 ---
 
+## Fecha actual
+
+Antes de cualquier WebSearch que incluya año o mes, confirmá la fecha del sistema (`Bash: date` o contexto `currentDate`). Nunca asumas ni hardcodees el año — usá siempre el que reporta el sistema.
+
+---
+
 ## Advertencia obligatoria
 
 Incluir al inicio de toda respuesta:
