@@ -1,0 +1,40 @@
+name: Check version bump
+
+on:
+  pull_request:
+    paths:
+      - '.claude-plugin/plugin.json'
+      - 'skills/**'
+
+jobs:
+  version-bump:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Get version on base branch
+        id: base
+        run: |
+          git fetch origin ${{ github.base_ref }}
+          BASE_VERSION=$(git show origin/${{ github.base_ref }}:.claude-plugin/plugin.json | python3 -c "import sys,json; print(json.load(sys.stdin)['version'])")
+          echo "version=$BASE_VERSION" >> $GITHUB_OUTPUT
+
+      - name: Get version on PR branch
+        id: pr
+        run: |
+          PR_VERSION=$(python3 -c "import json; print(json.load(open('.claude-plugin/plugin.json'))['version'])")
+          echo "version=$PR_VERSION" >> $GITHUB_OUTPUT
+
+      - name: Fail if version was not bumped
+        run: |
+          BASE="${{ steps.base.outputs.version }}"
+          PR="${{ steps.pr.outputs.version }}"
+          echo "Base version: $BASE"
+          echo "PR version:   $PR"
+          if [ "$BASE" = "$PR" ]; then
+            echo "::error file=.claude-plugin/plugin.json::La versión no fue actualizada (sigue en $PR). Bumpeá el campo \"version\" en .claude-plugin/plugin.json antes de mergear."
+            exit 1
+          fi
+          echo "Version bumped: $BASE → $PR ✓"
