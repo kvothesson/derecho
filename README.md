@@ -10,6 +10,16 @@ Marco legal argentino accesible. Explica derechos laborales, cómo reclamar como
 claude --plugin-dir /ruta/a/derecho
 ```
 
+### OpenAI Codex
+
+No requiere instalación. Codex lee `AGENTS.md` automáticamente al abrirse en este directorio.
+
+```bash
+git clone https://github.com/kvothesson/derecho ~/derecho
+cd ~/derecho
+codex
+```
+
 ## Comandos
 
 ### `/derecho laboral despido sin causa`
