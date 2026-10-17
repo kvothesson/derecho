@@ -68,7 +68,7 @@ Hace WebSearch con:
 `"defensa consumidor argentina [problema] cómo reclamar [año actual]"`
 
 Y WebFetch a:
-`https://www.argentina.gob.ar/economia/comercio/defensa-del-consumidor`
+`https://www.argentina.gob.ar/economia/industria-y-comercio/defensadelconsumidor`
 
 Fallback: WebSearch a `site:argentina.gob.ar defensa consumidor [problema]`
 
@@ -96,7 +96,7 @@ Formato:
 2. [paso 2]
 
 **Dónde reclamar:**
-- Online: https://www.argentina.gob.ar/consumidor/ventanilla-unica-federal
+- Online: https://www.argentina.gob.ar/servicio/iniciar-un-reclamo-ante-defensa-del-consumidor
 - Presencial: oficina de Defensa del Consumidor más cercana
 
 **Plazo de respuesta del proveedor:** [días]

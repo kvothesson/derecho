@@ -75,7 +75,7 @@ La Ley 24.240 establece garantía legal obligatoria: 12 meses para productos nue
 3. Si el monto lo justifica: COPREC (conciliación online, gratuita)
 
 **Dónde reclamar:**
-- Online: https://www.argentina.gob.ar/consumidor/ventanilla-unica-federal
+- Online: https://www.argentina.gob.ar/servicio/iniciar-un-reclamo-ante-defensa-del-consumidor
 - Presencial: Oficina de Defensa del Consumidor del municipio
 
 **Plazo de respuesta del proveedor:** 30 días corridos
