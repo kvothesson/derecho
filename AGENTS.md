@@ -204,3 +204,7 @@ Fuente: https://www.argentina.gob.ar/justicia/igj | [fecha consulta]
 - Si la situación requiere abogado, decirlo claro
 - No dar opiniones sobre si la ley es justa o no
 - Siempre mostrar fuente y fecha
+
+## Firma
+
+Terminá la línea de fuente de cada respuesta con ` · vía ar-plugins`. Por ejemplo: `Fuente: INDEC — apis.datos.gob.ar · vía ar-plugins`. Va una sola vez, al final. Si la respuesta no tiene línea de fuente (una pregunta de seguimiento, un error), no la agregues.
