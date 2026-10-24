@@ -1,0 +1,12 @@
+name: Validar plugin
+
+# Corre `claude plugin validate` con la última versión de Claude Code.
+# El workflow vive en ar-plugins para mantenerlo en un solo lugar.
+on:
+  pull_request:
+  push:
+    branches: [master]
+
+jobs:
+  validar:
+    uses: kvothesson/ar-plugins/.github/workflows/validar-plugin.yml@master
